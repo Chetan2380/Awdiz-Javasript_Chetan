@@ -50,16 +50,16 @@ array.shift();
 console.log(array);
 
 var students = ["virat", "rohit", "rahul", "rishabh"];
-students.splice(1, 1, "Rahul");
-console.log(students);
-students.splice(2, 0, "Rishabh");
-console.log(students);
-students.splice(0, 1, "a"); 
-console.log(students);
-students.splice(3, 0, "b"); 
-console.log(students);
+// students.splice(1, 1, "Rahul");
+// console.log(students);
+// students.splice(2, 0, "Rishabh");
+// console.log(students);
+// students.splice(0, 1, "a"); 
+// console.log(students);
+// students.splice(3, 0, "b"); 
+// console.log(students);
 
-const newArray = students.slice(0, -1);
+const newArray = students.slice(0, 1);
 console.log(newArray);
 
 const todo = ["Do assignment", "Eat lunch", "Go home"];
