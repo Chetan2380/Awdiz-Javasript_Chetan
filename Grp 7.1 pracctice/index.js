@@ -28,3 +28,26 @@ function primenumber(number){
 
 
 primenumber(7)
+
+for (var i = 0; i < 5; i++) {
+    var c = "";
+    
+    for (var j = 0; j <= i; j++) {
+        c = c + "*";
+    }
+    
+    console.log(c);
+}
+
+let rows = 6; 
+let char = "";
+
+// External loop
+for (let i = 1; i <= rows; i++) {
+  // Internal loop
+  for (let j = 1; j <= i; j++) {
+    char += j;
+  }
+  char += "\n";
+}
+console.log(char);
