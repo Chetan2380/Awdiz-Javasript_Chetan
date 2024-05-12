@@ -35,10 +35,11 @@
 // Binary Search
 
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var target = 8;
+var target = 2;
 
 function BinarySearch(array, target) {
   const middleIndex = Math.floor(array.length / 2);
+  console.log(middleIndex);
   if (target == array[middleIndex]) {
     console.log(middleIndex);
   }
