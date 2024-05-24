@@ -126,15 +126,15 @@
 
 
 // Q10.
-date=[2024,4,15]
-function newDate(date){
-    a=date.slice(0,1)
-    b=date.slice(1,2);
-    c=date.slice(2);
-    d=a + '-' + b + '-' + c
-    console.log(d)
-}
-newDate(date)
+// date=[2024,4,15]
+// function newDate(date){
+//     a=date.slice(0,1)
+//     b=date.slice(1,2);
+//     c=date.slice(2);
+//     d=a + '-' + b + '-' + c
+//     console.log(d)
+// }
+// newDate(date)
 
 
 // array=[1,2,3,4,5];
@@ -147,3 +147,4 @@ newDate(date)
 
 // const array2=square(array);
 // console.log(array2);
+
