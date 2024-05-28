@@ -139,7 +139,7 @@
 
 // array=[1,2,3,4,5];
 // function square(array){
-//     array1=[];
+//     // array1=[];
 //     const map1=array.map((x) => x*x)
 //     // array1.push(map1);
 //     return map1
