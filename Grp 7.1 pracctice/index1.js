@@ -148,3 +148,166 @@
 // const array2=square(array);
 // console.log(array2);
 
+
+// var string = "javascript";
+// var count = 0;
+// var compareCount = 0;
+// function mostRepeatedChar(string){
+//     for(i=0;i<string.length;i++){
+//         for(j=i+1;j<string.length && j != i;j++){
+//             if(string.charAt(i) == string.charAt(j)){
+//                 count++;
+//             }
+//         }
+//         if(count > compareCount){
+//             compareCount = count ;
+//             console.log(string[i])
+//         }
+//     }
+//     return count;
+// }
+// console.log(mostRepeatedChar(string));
+
+// // JavaScript program for the above approach
+
+// // function that return maximum occurring character
+// function getMaxOccurringChar(str)
+// {
+
+// 	// create map to store frequency of every character
+// 	let mp = new Map();
+	
+// 	// to store length of string
+// 	let n = str.length;
+	
+// 	// to store answer 
+// 	let ans;
+	
+// 	// to check count of answer character is less or greater
+// 	// than another elements count
+// 	let cnt=0;
+	
+// 	// traverse the string 
+// 	for(let i=0 ;i<n ; i++){
+// 		// push element into map and increase its frequency 
+// 		mp.set(str[i], (mp.get(str[i]) || 0) + 1);
+		
+// 		// update answer and count
+// 		if(cnt < mp.get(str[i])){
+// 			ans = str[i];
+// 			cnt = mp.get(str[i]);
+// 		}
+// 	}
+	
+// 	return ans;
+// }
+
+// // Driver Code
+// let str = "sample string aaamp";
+// console.log("Max occurring character is: " + getMaxOccurringChar(str));
+
+// // This code is contributed by rutikbhosale
+
+
+// var number=[1,2,3,4,5,6];
+// var target=4;
+
+// function binarysearch(array,target){
+//     var left=0; 
+//     var right=array.length-1; 
+//     while(left<=right){ 
+//         var midindex=Math.ceil((left+right)/2); 
+//         console.log(midindex, "midindex",array[midindex]) 
+//         if (array[midindex]===target){ 
+//             return midindex;
+//         }
+//         else if(array[midindex]<target){ 
+//             console.log(array[midindex],target,"element is lesser than target");
+//             left=midindex+1;
+//         }
+//         else if(array[midindex]>target){
+//             console.log(array[midindex],target,"element is greater than target");
+//             left=midindex-1;
+//         }
+//     }
+// }
+
+// const result=binarysearch(number,target)
+// console.log(result)
+
+
+
+// function getMaxOccurringChar(str)
+// {
+// 	let mp = new Map();
+// 	let n = str.length;
+// 	let ans;
+// 	let cnt=0;
+	
+	
+// 	for(let i=0 ;i<n ; i++){
+// 		mp.set(str[i], (mp.get(str[i]) || 0) + 1);
+		
+// 		if(cnt < mp.get(str[i])){
+// 			ans = str[i];
+// 			cnt = mp.get(str[i]);
+// 		}
+// 	}
+	
+// 	return ans;
+// }
+
+// let str = "sample string";
+// console.log("Max occurring character is: " + getMaxOccurringChar(str));
+
+// function flattenArray(arr) {
+//     let flattenedArray = [];
+
+//     // Helper function to flatten nested arrays
+//     function flatten(arr) {
+//         for (let i = 0; i < arr.length; i++) {
+//             if (Array.isArray(arr[i])) {
+//                 // Recursively flatten nested arrays
+//                 flatten(arr[i]);
+//             } else {
+//                 // Push non-array elements to the flattenedArray
+//                 flattenedArray.push(arr[i]);
+//             }
+//         }
+//     }
+
+//     // Call the helper function with the input array
+//     flatten(arr);
+
+//     return flattenedArray;
+// }
+
+// // Example usage:
+// const nestedArray = [1, [2, [3, 4], 5], 6];
+// console.log(flattenArray(nestedArray)); 
+
+
+function firstNonRepeatedChar(str) {
+    // Create an object to store character frequencies
+    let charCount = {};
+
+    // Iterate through the string to count character frequencies
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+
+    // Iterate through the string again to find the first non-repeated character
+    for (let char of str) {
+        if (charCount[char] === 1) {
+            return char;
+        }
+    }
+
+    // If all characters are repeated, return null
+    return null;
+}
+
+// Example usage:
+console.log(firstNonRepeatedChar("hello")); // Output: "h"
+console.log(firstNonRepeatedChar("abracadabra")); // Output: "c"
+console.log(firstNonRepeatedChar("aaaa")); // Output: null
