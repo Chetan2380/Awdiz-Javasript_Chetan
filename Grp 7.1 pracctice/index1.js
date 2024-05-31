@@ -287,27 +287,39 @@
 // console.log(flattenArray(nestedArray)); 
 
 
-function firstNonRepeatedChar(str) {
-    // Create an object to store character frequencies
-    let charCount = {};
+// function firstNonRepeatedChar(str) {
+//     // Create an object to store character frequencies
+//     let charCount = {};
 
-    // Iterate through the string to count character frequencies
-    for (let char of str) {
-        charCount[char] = (charCount[char] || 0) + 1;
+//     // Iterate through the string to count character frequencies
+//     for (let char of str) {
+//         charCount[char] = (charCount[char] || 0) + 1;
+//     }
+
+//     // Iterate through the string again to find the first non-repeated character
+//     for (let char of str) {
+//         if (charCount[char] === 1) {
+//             return char;
+//         }
+//     }
+
+//     // If all characters are repeated, return null
+//     return null;
+// }
+
+// // Example usage:
+// console.log(firstNonRepeatedChar("hello")); // Output: "h"
+// console.log(firstNonRepeatedChar("abracadabra")); // Output: "c"
+// console.log(firstNonRepeatedChar("aaaa")); // Output: null
+
+
+var divisor = 2;
+var number = 13195;
+while(number > 1){
+    if(number % divisor === 0){ 
+        number /= divisor;
+    } else {
+        divisor++;
     }
-
-    // Iterate through the string again to find the first non-repeated character
-    for (let char of str) {
-        if (charCount[char] === 1) {
-            return char;
-        }
-    }
-
-    // If all characters are repeated, return null
-    return null;
 }
-
-// Example usage:
-console.log(firstNonRepeatedChar("hello")); // Output: "h"
-console.log(firstNonRepeatedChar("abracadabra")); // Output: "c"
-console.log(firstNonRepeatedChar("aaaa")); // Output: null
+console.log(divisor);
