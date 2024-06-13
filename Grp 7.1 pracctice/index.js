@@ -72,17 +72,17 @@
 
 // duplicateletter("hello")
 
-rows=5;
-char='';
-for(var i=1;i<=rows;i++){
-    for(var j=1;j<=i;j++){
-        char+=j;
-        // console.log(j)
-    }
-    char+="\n"
-    // console.log(i)
-}
-console.log(char)
+// rows=5;
+// char='';
+// for(var i=1;i<=rows;i++){
+//     for(var j=1;j<=i;j++){
+//         char+=j;
+//         // console.log(j)
+//     }
+//     char+="\n"
+//     // console.log(i)
+// }
+// console.log(char)
 
 // for(var i=5;i>=1;i--){
 //     console.log(i)
@@ -111,3 +111,66 @@ console.log(char)
 //     console.log(i,"i")
 // }
 // console.log(char)
+
+const myUnixTimestamp = 1691622800; // start with a Unix timestamp
+
+const myDate = new Date(myUnixTimestamp * 1000); // convert timestamp to milliseconds and construct Date object
+
+// console.log(myDate); // will print "Thu Aug 10 2023 01:13:20" followed by the local timezone on browser console
+// // console.log(myDate.toISOString()); // will print "2023-08-10T01:13:20.000Z"
+// console.log(myDate.toLocaleString()); // output will vary based on system locale settings
+
+// var InsituteDetails = {
+//     name: "Awdiz",
+//     age: 12,
+//     location: "Vashi",
+//     isOpen: true,
+//     courses: [
+//       "Full stack Development",
+//       "CCNA",
+//       "WINDOWS",
+//       "LINUX",
+//       ["Hi", "Welcome", "target"],
+//     ],
+//     batchesDetails: { totalBatches: 50, totalStudents: 500 },
+//   };
+
+// // console.log(InsituteDetails.batchesDetails);
+// // console.log(InsituteDetails.courses);
+// // console.log(InsituteDetails.location);
+// // console.log(InsituteDetails.batchesDetails.totalStudents)
+
+// // console.log(InsituteDetails["name"])
+// // console.log(InsituteDetails["age"])
+// // console.log(InsituteDetails["courses"].length)
+
+// // const keys = Object.keys(InsituteDetails);
+// // console.log(keys);
+// // const values = Object.values(InsituteDetails);
+// // console.log(values);
+
+// subarray=InsituteDetails.courses[4];
+// console.log(subarray);
+// console.log(subarray[2]);
+
+// // for(var i=0;i<subarray.length;i++){
+// //   if(subarray[i]==="target"){
+// //     console.log(i)
+// //   }
+// // }
+
+// // for (let key in InsituteDetails) {
+// //   console.log(key, InsituteDetails[key]);
+// // }
+
+// var response={forecast:[{day:"wed", date:20202024,high:80},{day:"tue", date:20202024,high:80}]};
+// console.log(response.forecast[0].day);
+
+
+
+
+
+
+
+
+
