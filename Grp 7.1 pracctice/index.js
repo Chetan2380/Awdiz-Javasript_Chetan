@@ -112,13 +112,13 @@
 // }
 // console.log(char)
 
-const myUnixTimestamp = 1691622800; // start with a Unix timestamp
+const myUnixTimestamp = 1718259671; // start with a Unix timestamp
 
 const myDate = new Date(myUnixTimestamp * 1000); // convert timestamp to milliseconds and construct Date object
 
-// console.log(myDate); // will print "Thu Aug 10 2023 01:13:20" followed by the local timezone on browser console
-// // console.log(myDate.toISOString()); // will print "2023-08-10T01:13:20.000Z"
-// console.log(myDate.toLocaleString()); // output will vary based on system locale settings
+console.log(myDate); // will print "Thu Aug 10 2023 01:13:20" followed by the local timezone on browser console
+console.log(myDate.toISOString().split('T')[0]); // will print "2023-08-10T01:13:20.000Z"
+console.log(myDate.toLocaleString().split(',')[0]); // output will vary based on system locale settings
 
 // var InsituteDetails = {
 //     name: "Awdiz",
