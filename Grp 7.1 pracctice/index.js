@@ -102,20 +102,20 @@
 // }
 // console.log(char)
 
-n=5;
-var char='';
-for(var i=1;i<=n;i++){
-    console.log(i,"i")
-    for(var j=1;j<=n-i+1;j++){
-        console.log(n-i+1, "n-i+1")
-        console.log(j,"j")
-        // console.log(j,"j")
-        char+=j;
-    }
-    char+='\n';
+// n=5;
+// var char='';
+// for(var i=1;i<=n;i++){
+//     console.log(i,"i")
+//     for(var j=1;j<=n-i+1;j++){
+//         console.log(n-i+1, "n-i+1")
+//         console.log(j,"j")
+//         // console.log(j,"j")
+//         char+=j;
+//     }
+//     char+='\n';
     
-}
-console.log(char)
+// }
+// console.log(char)
 
 // const myUnixTimestamp = 1718259671; // start with a Unix timestamp
 
@@ -170,6 +170,27 @@ console.log(char)
 
 // var response={forecast:[{day:"wed", date:20202024,high:80},{day:"tue", date:20202024,high:80}]};
 // console.log(response.forecast[0].day);
+
+
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let str = "* ";
+//     console.log(str.repeat(i));
+// }
+
+rows=5;
+char='';
+for(var i=1;i<=rows;i++){
+    console.log(i, "i")
+    for(var j=1;j<=i;j++){
+        console.log(j,"j")
+        char+="* ";
+        // console.log(j)
+    }
+    char+="\n"
+    // console.log(i)
+}
+console.log(char)
 
 
 
