@@ -72,19 +72,19 @@
 
 // duplicateletter("hello")
 
-// rows=5;
-// char='';
-// for(var i=1;i<=rows;i++){
-//     console.log(i, "i")
-//     for(var j=1;j<=i;j++){
-//         console.log(j,"j")
-//         char+=j;
-//         // console.log(j)
-//     }
-//     char+="\n"
-//     // console.log(i)
-// }
-// console.log(char)
+rows=5;
+char='';
+for(var i=1;i<=rows;i++){
+    console.log(i, "i")
+    for(var j=1;j<=i;j++){
+        console.log(j,"j")
+        char+=j;
+        // console.log(j)
+    }
+    char+="\n"
+    // console.log(i)
+}
+console.log(char)
 
 // for(var i=5;i>=1;i--){
 //     console.log(i)
@@ -178,19 +178,19 @@
 //     console.log(str.repeat(i));
 // }
 
-rows=5;
-char='';
-for(var i=1;i<=rows;i++){
-    console.log(i, "i")
-    for(var j=1;j<=i;j++){
-        console.log(j,"j")
-        char+="* ";
-        // console.log(j)
-    }
-    char+="\n"
-    // console.log(i)
-}
-console.log(char)
+// rows=5;
+// char='';
+// for(var i=1;i<=rows;i++){
+//     console.log(i, "i")
+//     for(var j=1;j<=i;j++){
+//         console.log(j,"j")
+//         char+="* ";
+//         // console.log(j)
+//     }
+//     char+="\n"
+//     // console.log(i)
+// }
+// console.log(char)
 
 
 
